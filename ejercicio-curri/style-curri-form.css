@@ -1,7 +1,7 @@
 .opciones{
     background-color: lightgoldenrodyellow;
     margin-left: 50%;
-    margin-top: 10%;
+    
     width: 50%;
     transform: translate(-50%, -20%);
     text-align: center;
@@ -31,6 +31,10 @@ ul{
     text-align: left;
 
     
+}
+.error{
+    background-color: aliceblue;
+    color: aliceblue;
 }
 .resultados{
     background-color: lightblue;

@@ -17,7 +17,9 @@
             print("<br>");
             print ("<a href=\"http://pruebas/ejercicio-temp/Ej_temperaturas.php\"><button>Ejercicio temperatura</button></a>");
             print("<br>");
-            print ("<a href=\"http://pruebas/miscelaneos/\"><button>Miscelaneos</button></a>");
+            print ("<a href=\"http://pruebas/miscelaneos/index.html\"><button>Miscelaneos</button></a>");
+            print("<br>");
+            print ("<a href=\"http://pruebas/ejercicio-curri/\"><button>Ejercicio curriculum</button></a>");
             print("<br>");
             print ("<a href=\"http://pruebas/ejercicio-formulario/index-form.php\"><button>Ejercicio formulario</button></a></div>");
         

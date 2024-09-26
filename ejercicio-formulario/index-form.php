@@ -9,7 +9,9 @@
 </head>
 
 <body>
-    
+    <header>
+        <h1></h1>
+    </header>
     <?php
     print ("<div class=\"opciones\">");
     if (!isset($_GET["state"]) || !isset($_POST["deporte"]) || !isset($_POST["horario"])) {
@@ -40,8 +42,8 @@
             print ("<li>" . $v . "</li>");
         }
         print ("</ul></div>");
-        print ("<br><h3>Con horario de " . $_POST["horario"]) . "<br><br>";
-
+        print ("<br><h3>Con horario de " . $_POST["horario"]) . "<br>";
+        print ("<h3> Fecha de inscripción: " . date('Y-m-d') . "<br><br>");
 
 
         print ("<a href=\"" . $_SERVER['PHP_SELF'] . "\"><button>Volver</button></a>");
