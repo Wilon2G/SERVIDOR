@@ -2,6 +2,9 @@
 <html>
 
 <head>
+	<?php 
+	print("<title>".$_POST["nombre"]." - Curriculum Vitae</title>")
+	?>
 	<title>Joe Bloggs - Curriculum Vitae</title>
 
 	<meta name="viewport" content="width=device-width" />

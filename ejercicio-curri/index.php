@@ -13,7 +13,7 @@
 <body>
     <?php
     if (!isset($_POST["state"])) {
-        print ("<form  action=\"http://pruebas/ejercicio-curri/main.php \" method=\"POST\">
+        print ("<div class=\"opciones\"><form  action=\"http://pruebas/ejercicio-curri/main.php \" method=\"POST\">
     <h3>Nombre:<h3>
      <input type=\"text\" name=\"nombre\" maxlength=\"30\" minlength=\"1\" required >
      <br><br>
@@ -77,7 +77,7 @@
      <br><br>
      
      <input type=\"submit\" value=\"Generar cv\">
-     </form>");
+     </form></div>");
     }
 
 
