@@ -16,6 +16,9 @@ function printForm(){
          <input type=\"tel\" name=\"tlfn\" maxlength=\"30\" minlength=\"1\" required >
          <br><br>");
          $sports=["Tenis","Fútbol","Ciclismo","Natación"];
+         foreach($sports as $sport){
+          
+         }
          print("
          <label>Deportes:</label>
          <input type=\"checkbox\" value=\"Tenis\" name=\"deporte[]\" >Tenis</input>
