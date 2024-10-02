@@ -16,36 +16,33 @@ function printForm(){
          <input type=\"tel\" name=\"tlfn\" maxlength=\"30\" minlength=\"1\" required >
          <br><br>");
          $sports=["Tenis","Fútbol","Ciclismo","Natación"];
+         print("<label>Deportes:</label>");
          foreach($sports as $sport){
-          
+          print("<input type=\"checkbox\" value=\"".$sport."\" name=\"deporte[]\" >".$sport."</input>");
          }
-         print("
-         <label>Deportes:</label>
-         <input type=\"checkbox\" value=\"Tenis\" name=\"deporte[]\" >Tenis</input>
-         <input type=\"checkbox\" value=\"Fútbol\" name=\"deporte[]\" >Fútbol</input>
-         <input type=\"checkbox\" value=\"Ciclismo\" name=\"deporte[]\">Ciclismo</input>
-         <input type=\"checkbox\" value=\"Natación\" name=\"deporte[]\">Natación</input>");
          print("
          <br><br>");
          print("
          <label>Nacionalidad:</label>
-         <select name=\"nacionalidad\" >
-         <option value=\"Español\">Español</option>
-         <option value=\"Inglés\">Inglés</option>
-         <option value=\"Alemán\">Alemán</option>
-         <option value=\"Francés\">Francés</option>
-        </select>");
+         <select name=\"nacionalidad\">");
+         $nacionalities=["Español","Inglés","Alemán","Francés"];
+         foreach($nacionalities as $nac){
+          print(" <option value=\"".$nac."\">".$nac."</option>");
+         }
+        print("</select>");
+         
          print("
          <br><br>");
          print("
          <label>Idiomas:</label>
          <br>
-         <select name=\"idioma[]\" multiple>
-         <option value=\"Inglés\">Inglés</option>
-         <option value=\"Español\">Español</option>
-         <option value=\"Alemán\">Alemán</option>
-         <option value=\"Francés\">Francés</option>
-        </select>");
+         <select name=\"idioma[]\" multiple>");
+         $languajes=["Español","Inglés","Alemán","Francés"];
+         foreach($languajes as $lang){
+          print(" <option value=\"Inglés\">".$lang."</option>");
+         }
+        print("</select>");
+        
         print("
          <br><br>");
          print("
@@ -85,6 +82,10 @@ function printForm(){
 
 function checkInputs(){
   return !isset($_POST["deporte"])|| !isset($_POST["nacionalidad"])|| !isset($_POST["idioma"])|| !isset($_POST["nvling"])|| !isset($_POST["sexo"])|| !isset($_POST["fechan"]);
+}
+
+function checkData(){
+  
 }
 
 function printBody(){

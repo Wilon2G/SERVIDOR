@@ -25,6 +25,7 @@
     
     if (isset($_POST["submit"])) {
       if (!checkInputs()) {
+        
         printBody();
       }
       else{
@@ -39,7 +40,6 @@
     }
     
     ?>
-
 </body>
 
 </html>
