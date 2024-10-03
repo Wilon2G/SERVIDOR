@@ -21,6 +21,10 @@
             print("<br>");
             print ("<a href=\"http://pruebas/ejercicio-curri/\"><button>Ejercicio curriculum</button></a>");
             print("<br>");
+            print ("<a href=\"http://pruebas/ejercicio-texto/index-texto.php\"><button>Ejercicio textarea</button></a>");
+            print("<br>");
+            print ("<a href=\"http://pruebas/ejercicio-archivos1/index-archivos1.php\"><button>Ejercicio archivos 1</button></a>");
+            print("<br>");
             print ("<a href=\"http://pruebas/ejercicio-formulario/index-form.php\"><button>Ejercicio formulario</button></a></div>");
         
     
